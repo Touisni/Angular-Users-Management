@@ -1,0 +1,21 @@
+.navbar {
+    .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .navbar-brand {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin-right: 2rem;
+    }
+  
+    .form-select {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1rem;
+      margin-left: auto;
+      max-width: 70px;
+    }
+  }
