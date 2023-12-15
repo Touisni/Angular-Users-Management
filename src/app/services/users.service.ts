@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environments } from '../environements/environments';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
-  private apiLink = 'https://reqres.in/api/users';
 
   deleteUser(userId: number): Observable<void> {
-    const url = `${this.apiLink}/${userId}`;
+    const url = `${environments.apiLink}/${userId}`;
     return this.http.delete<void>(url);
   }
 
-  constructor(private http: HttpClient) { }
+  constructor(protected http: HttpClient) { }
     getUsers(page: number, perPage: number): Observable<any> {
-    const url = `${this.apiLink}?page=${page}&per_page=${perPage}`;
-    return this.http.get(url);
+    const url = `${environments.apiLink}?page=${page}&per_page=${perPage}`;
+    return this.http.get(url) as Observable<any>;
   }
 }
