@@ -6,21 +6,26 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './elements/header/header.component';
 import { MenuComponent } from './elements/menu/menu.component';
 import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './elements/pages/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MenuComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    NgSelectModule,
+    NgbDropdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
