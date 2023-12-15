@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../../../../services/users.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-list',
@@ -9,7 +10,13 @@ import { UsersService } from '../../../../services/users.service';
 export class ListComponent implements OnInit {
   users: any[] = [];
 
-  constructor(private userService: UsersService) {}
+  constructor(private userService: UsersService, private translate: TranslateService) {
+    
+    translate.setDefaultLang('en');
+  }
+  switchLanguage(language: string) {
+    this.translate.use(language);
+  }
 
   onActionChange(event: Event, user: any) {
     const action = (event.target as HTMLSelectElement).value;

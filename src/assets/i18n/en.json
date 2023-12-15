@@ -1,0 +1,23 @@
+{
+  "navbarTitle": "Angular Training",
+  "englishFlag": "🇬🇧",
+  "frenchFlag": "🇫🇷",
+
+  "menuTitle": "Menu",
+  "homeLink": "Home",
+  "manageUsersLink": "Manage users",
+
+  "welcomeMessage": "Welcome to this test application",
+
+  "manageUsersTitle": "Manage users",
+  "idColumn": "ID",
+  "avatarColumn": "Avatar",
+  "firstNameColumn": "First Name",
+  "lastNameColumn": "Last Name",
+  "emailColumn": "Email",
+  "actionsPlaceholder": "Actions",
+  "updateOption": "Update",
+  "deleteOption": "Delete",
+  "previousPage": "Previous",
+  "nextPage": "Next"
+  }

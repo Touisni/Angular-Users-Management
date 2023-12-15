@@ -1,0 +1,23 @@
+{
+  "navbarTitle": "Formation Angular",
+  "englishFlag": "🇬🇧",
+  "frenchFlag": "🇫🇷",
+
+  "menuTitle": "Menu",
+  "homeLink": "Accueil",
+  "manageUsersLink": "Gérer les utilisateurs",
+
+  "welcomeMessage": "Bienvenue dans cette application de test",
+
+  "manageUsersTitle": "Gérer les utilisateurs",
+  "idColumn": "ID",
+  "avatarColumn": "Avatar",
+  "firstNameColumn": "Prénom",
+  "lastNameColumn": "Nom de famille",
+  "emailColumn": "E-mail",
+  "actionsPlaceholder": "Actions",
+  "updateOption": "Mettre à jour",
+  "deleteOption": "Supprimer",
+  "previousPage": "Précédent",
+  "nextPage": "Suivant"
+  }

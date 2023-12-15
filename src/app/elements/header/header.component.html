@@ -1,9 +1,9 @@
 <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand">Angular Training</a>
-      <select class="form-select custom-select" [(ngModel)]="selectedLanguage">
-        <option value="en">🇬🇧</option>
-        <option value="fr">🇫🇷</option>
-      </select>
-    </div>
-  </nav>
+  <div class="container-fluid">
+    <a class="navbar-brand" translate="navbarTitle"></a>
+    <select class="form-select custom-select" [(ngModel)]="selectedLanguage" (change)="switchLanguage()">
+      <option value="en" translate="englishFlag"></option>
+      <option value="fr" translate="frenchFlag"></option>
+    </select>
+  </div>
+</nav>
