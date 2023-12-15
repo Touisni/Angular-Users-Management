@@ -3,11 +3,11 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th translate="idColumn">ID</th>
-        <th translate="avatarColumn">Avatar</th>
-        <th translate="firstNameColumn">First Name</th>
-        <th translate="lastNameColumn">Last Name</th>
-        <th translate="emailColumn">Email</th>
+        <th translate="idColumn"></th>
+        <th translate="avatarColumn"></th>
+        <th translate="firstNameColumn"></th>
+        <th translate="lastNameColumn"></th>
+        <th translate="emailColumn"></th>
         <th></th>
       </tr>
     </thead>
@@ -20,9 +20,9 @@
         <td>{{ user.email }}</td>
         <td>
           <select class="form-select" (change)="onActionChange($event, user)">
-            <option value="" selected disabled hidden translate="actionsPlaceholder">Actions</option>
-            <option value="update" translate="updateOption">Update</option>
-            <option value="delete" translate="deleteOption">Delete</option>
+            <option value="" selected disabled hidden translate="actionsPlaceholder"></option>
+            <option value="update" translate="updateOption"></option>
+            <option value="delete" translate="deleteOption"></option>
           </select>
         </td>
       </tr>
@@ -31,11 +31,11 @@
   <div class="d-flex justify-content-center">
     <nav aria-label="Page navigation example">
       <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#" translate="previousPage">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#" translate="previousPage"></a></li>
         <li class="page-item"><a class="page-link" href="#">1</a></li>
         <li class="page-item"><a class="page-link" href="#">2</a></li>
         <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#" translate="nextPage">Next</a></li>
+        <li class="page-item"><a class="page-link" href="#" translate="nextPage"></a></li>
       </ul>
     </nav>
   </div>
