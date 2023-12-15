@@ -19,7 +19,7 @@
         <td>{{ user.last_name }}</td>
         <td>{{ user.email }}</td>
         <td>
-          <select class="form-select">
+          <select class="form-select" (change)="onActionChange($event, user)">
             <option value="" selected disabled hidden>Actions</option>
             <option value="update">Update</option>
             <option value="delete">Delete</option>

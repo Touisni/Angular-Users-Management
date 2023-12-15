@@ -11,6 +11,33 @@ export class ListComponent implements OnInit {
 
   constructor(private userService: UsersService) {}
 
+  onActionChange(event: Event, user: any) {
+    const action = (event.target as HTMLSelectElement).value;
+
+    switch (action) {
+      case 'update':
+        //
+        break;
+      case 'delete':
+        this.deleteUser(user.id);
+        break;
+      default:
+        //
+        break;
+    }
+  }
+
+  deleteUser(userId: number) {
+    this.userService.deleteUser(userId).subscribe(
+      () => {
+        this.users = this.users.filter((user) => user.id !== userId);
+      },
+      (error) => {
+        console.error('Error deleting user:', error);
+      }
+    );
+  }
+
   ngOnInit(): void {
     this.loadUsers();
   }

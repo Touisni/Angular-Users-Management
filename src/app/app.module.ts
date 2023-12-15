@@ -8,8 +8,10 @@ import { MenuComponent } from './elements/menu/menu.component';
 import { FormsModule } from '@angular/forms';
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './elements/pages/home/home.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { NgSelectModule } from '@ng-select/ng-select';
+
+
 
 @NgModule({
   declarations: [
