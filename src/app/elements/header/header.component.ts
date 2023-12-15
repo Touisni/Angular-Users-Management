@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   selectedLanguage: string = 'en';
+
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');
   }
@@ -15,5 +16,5 @@ export class HeaderComponent {
   switchLanguage() {
     this.translate.use(this.selectedLanguage);
   }
-
+  
 }

@@ -5,15 +5,15 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
-  styleUrl: './list.component.scss'
+  styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
   users: any[] = [];
 
   constructor(private userService: UsersService, private translate: TranslateService) {
-    
     translate.setDefaultLang('en');
   }
+
   switchLanguage(language: string) {
     this.translate.use(language);
   }
@@ -23,13 +23,13 @@ export class ListComponent implements OnInit {
 
     switch (action) {
       case 'update':
-        //
+        // 
         break;
       case 'delete':
         this.deleteUser(user.id);
         break;
       default:
-        //
+        // 
         break;
     }
   }

@@ -1,5 +1,6 @@
 <div class="container">
   <h2 translate="manageUsersTitle"></h2>
+  
   <table class="table table-striped">
     <thead>
       <tr>
@@ -11,6 +12,7 @@
         <th></th>
       </tr>
     </thead>
+    
     <tbody>
       <tr *ngFor="let user of users">
         <td>{{ user.id }}</td>
@@ -28,6 +30,7 @@
       </tr>
     </tbody>
   </table>
+  
   <div class="d-flex justify-content-center">
     <nav aria-label="Page navigation example">
       <ul class="pagination">
@@ -40,5 +43,3 @@
     </nav>
   </div>
 </div>
-
-
