@@ -1,4 +1,4 @@
-# Angular Dynamic Marketplace with RxJS
+# Angular Users Management
 
 This project is an Angular-based user management application that demonstrates the use of Angular modules, components, services, and internationalization (i18n) with `@ngx-translate`. It also integrates Bootstrap for styling and provides a responsive UI.
 
